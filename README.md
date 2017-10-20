@@ -6,24 +6,21 @@
 - 3.tar -xzvf openresty-VERSION.tar.gz
 - 4.cd openresty-VERSION/
 
-- 5.
-./configure --prefix=/data/testnginx/openresty \
+- 5.  ./configure --prefix=/data/testnginx/openresty \
             --with-luajit \
             --without-http_redis2_module \
             --with-http_iconv_module
-- 6.
-make
+
+- 6.make
 make install
 
-- 7.
-mkdir -p /data/testnginx/lib/common
+- 7.mkdir -p /data/testnginx/lib/common
 mkdir -p /data/testnginx/lib/connect
 mkdir -p /data/testnginx/logs
 mkdir -p /data/testnginx/sites-conf
 mkdir -p /data/testnginx/data
 
-- 8.
-vim nginx.conf{
+- 8.vim nginx.conf{
 error_log   /data/testnginx/logs/error.log error;
 
 
@@ -35,5 +32,4 @@ include /data/testnginx/sites-conf/*;
 }
 
 
-- 9.
-testnginx.open.com/test1.do?gameID=1&userID=1
+- 9.testnginx.open.com/test1.do?gameID=1&userID=1
