@@ -1,6 +1,6 @@
 # setUpOpenresty
 
-##快速搭建指南
+## 快速搭建指南
 - 1.yum install readline-devel pcre-devel openssl-devel
 - 2.wget https://openresty.org/download/openresty-1.11.2.1.tar.gz
 - 3.tar -xzvf openresty-VERSION.tar.gz
@@ -40,3 +40,7 @@ include /data/testnginx/sites-conf/*;
 
 
 - 9.testnginx.open.com/test1.do?gameID=1&userID=1
+
+
+## 注意
+在lib/connect/connection_open.lua里配置数据库相关密码
