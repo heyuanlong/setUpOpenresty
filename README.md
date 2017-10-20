@@ -24,7 +24,9 @@ mkdir -p /data/testnginx/sites-conf;
 mkdir -p /data/testnginx/data;
 
 
-- 8.vim nginx.conf{
+- 8.vim nginx.conf
+
+{
 error_log   /data/testnginx/logs/error.log error;
 
 
@@ -33,6 +35,7 @@ lua_package_cpath "/data/testnginx/lib/?.so;/data/testnginx/openresty/lualib/?.s
 
 
 include /data/testnginx/sites-conf/*;
+
 }
 
 
